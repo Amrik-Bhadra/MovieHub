@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Application - by Amrik Bhadra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/clapperboard.png" type="image/x-icon">
+    
+</head>
+<body>
+    <div class="home-main-container">        
+        <div class="overlay-container">
+            <div class="menu-container">
+                <h1 class="menu-title">
+                    Select User
+                </h1>
+                
+                <div class="user-container">
+                    <form action="registration_form.jsp" method="post">
+                        <!-- admin btn -->
+                        <button class="user-btn" value="admin" name="userType">
+                            <div class="user-box admin-box">
+                                <div class="user-img-box">
+                                    <img src="images/admin.png" alt="admin">
+                                </div>
+                                <div class="user-name-box">Admin</div>
+                            </div>
+                        </button>
+
+                        <!-- user btn -->
+                        <button class="user-btn" value="user" name="userType">
+                            <div class="user-box admin-box">
+                                <div class="user-img-box">
+                                    <img src="images/useer.png" alt="user">
+                                </div>
+                                <div class="user-name-box">User</div>
+                            </div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
