@@ -5,7 +5,8 @@ public class User {
 	public static String password;
 	public static String emailId;
 	public static String userType;
-	User(String username, String password, String emailId, String userType){
+	
+	public User(String username, String password, String emailId, String userType){
 		this.userName = username;
 		this.password = password;
 		this.emailId = emailId;
