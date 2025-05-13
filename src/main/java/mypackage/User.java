@@ -1,10 +1,10 @@
 package mypackage;
 
 public class User {
-	public static String userName;
-	public static String password;
-	public static String emailId;
-	public static String userType;
+	private String userName;
+	private String password;
+	private String emailId;
+	private String userType;
 	
 	public User(String username, String password, String emailId, String userType){
 		this.userName = username;
@@ -13,19 +13,19 @@ public class User {
 		this.userType = userType;
 	}
 	
-	 public static String getUserName() {
+	 public String getUserName() {
 		 return userName;
 	 }
 	 
-	 public static String getEmailId() {
+	 public String getEmailId() {
 		 return emailId;
 	 }
 	 
-	 public static String getPassword() {
+	 public String getPassword() {
 		 return password;
 	 }
 	 
-	 public static String getUserType() {
+	 public String getUserType() {
 		 return userType;
 	 }
 }
