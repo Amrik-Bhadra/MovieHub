@@ -10,10 +10,10 @@ public class UserDao {
 		Connection conn = DatabaseConnectivity.getConnection();
 		String insertUserQuery = Query.insertUserQuery;
 		PreparedStatement pstmt = conn.prepareStatement(insertUserQuery);
-		pstmt.setString(1, User.getEmailId());
-		pstmt.setString(2, User.getUserName());
-		pstmt.setString(3,  User.getPassword());
-		pstmt.setString(4,  User.getUserType());
+		pstmt.setString(1, user.getEmailId());
+		pstmt.setString(2, user.getUserName());
+		pstmt.setString(3, user.getPassword());
+		pstmt.setString(4, user.getUserType());
 		pstmt.executeUpdate();
 		pstmt.close();
 	}
